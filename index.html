@@ -24,126 +24,168 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
         sans-serif;
+        user-select: none;
+    
     }
     a{
-      color: #f9fea5;
+      color: #000000;
       text-decoration: none;
   }
-  i{
-    color: #f9fea5;
-    font-size: 2rem;
+    i{
+      color: #000000;
+      font-size: 2rem;
 }
 img{
-  margin-left: 3rem;
-  width: 8rem;
-  border-radius: 50%;
-  border: #0b0b0b 5px solid;
+  width: 10rem;
 }
-    .container {
-      width: 100%;
-      max-width: 100%;
-      height: 100vh;
-      background-color: whitesmoke;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 120rem;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+}
+
+ 
     .one {
-        background-image: linear-gradient(#f9fea5, #0b0b0b);
+      background-color: #3b4151;
       width: 25%;
-      height: 100%;
+      height: 100vh;
       display: flex;
       flex-flow: column;
-      color:#22272e ; 
+      justify-content: space-around;
+      color:#ffffff ; 
     }
     .wrapper{
-        margin: 2rem auto;
+        margin: 2rem 2rem;
         display: flex;
         flex-flow: column;
-        gap: 0.7rem;
+        gap: 0.7rem;    
     }
     .two {
-      background-color: #ffffff;
+    background-color: #fff;
       width: 75%;
-      height: 100%;
-      background-image: url(https://images.unsplash.com/photo-1510917065317-aa26965fe730?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: sans-serif;
       flex-flow: column;
       gap: 6rem;
-      color: white;
+
     }
     .main{
-        color: #ffffff;
+        color: #000000;
         font-size: 7rem;
-        box-shadow: 1px 10px 9px black;
+        background-color:#cdccd1 ;
         padding: 2rem;
 
     }
     .wrapper2{
         display: flex;
         gap: 3rem;
+        margin: 1rem;
     }
     #map{
         font-size:x-large;
+        color: #f2172a;
     }
-    @media (max-width: 750px) {
+    .info{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 1rem;
+      font-weight: bolder;
+      color: #000000;
+    }
+    #insta{
+        font-size:2rem;
+        color: #c42aa7;
+    }
+    #git{
+      font-size: 2rem;
+    }
+    #link{
+      font-size: 2rem;
+      color: #0b5fbb;
+    }
+    #mail{
+      font-size: 2rem;
+      color: #d64a3a;
+    }
+    @media (max-width: 808px) {
        .container{
         display: grid;
         grid-template-columns:repeat(1fr);
+        overflow: hidden;
        }
        .one{
-        width: 100%;
+        width: 100vw;
+        font-size:larger;
+        height: 58rem;
+      
        }
        .two{
-        width: 100%;
+        width: 100vw;
+        height: 33rem;
+        gap: 2rem;
+        
        }
        .info{
-        font-size: 0.5rem;
-        margin :1 rem;
+        font-size: 0.6rem;
+        margin:1rem;
+      
        }
        .main{
         font-size:2rem;
        }
+       .wrapper{
+        margin: 0 auto;
+       }
+     
       }
   </style>
   <body>
     <div class="container">
         <div class="one">
             <div class="wrapper">
-            
+             <img src="https://t4.ftcdn.net/jpg/02/15/84/43/240_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg" alt="">
             <h2>ABHISHEK PAWAR</h3>
             <h5>FRONT-END-DEVELOPER</h5>
             <h5>BSC-IT 2ND YEAR IN KBP COLLEGE ISLAMPUR</h5>
             <h5>aspawar1727@gmail.com</h5>
             <h5>9370657383</h5>
-             <h2>SKILLS</h2>
+             <h3>SKILLS</h3>
              <li>C</li>
              <li>C++</li>
              <li>HTML</li>
              <li>CSS</li>
              <li>JAVASCRIPT</li>
              <li>REACTJS</li>
-             <H2>LANGUGES</H2>
-             <li>MARATHI</li>
-             <li>HINDI</li>
-             <li>ENGLISH</li>
+             <H3>LANGUAGES</H3>
+             <li class="im" >HINDI</li>
+             <li class="im" >MARATHI</li>
+             <li class="im" >ENGLISH</li>
         </div>
       </div>
-      <div class="two"><h1 class="main">I 'am Developer </h1>
-    <h3  class="info">
-        Self-independent, reliable and friendly individual who works hard to achieve his goals.<br>
-        Adaptable quickly, and organized well. Interested in learning <br>the latest web & software technologies quickly.
-        Able to work well in teams as well as <br> individually. My future goal is to become a senior full-stack developer</h3>
+      <div class="two">
+        
+        <h1 class="main">I 'am Developer </h1>
+    <pre  class="info">
+        Self-independent, reliable and friendly individual who works hard to  
+        achieve his goals.Adaptable quickly, and organized well. Interested in 
+        learning the latest web & software technologies quickly. Able to work well
+        in teams as well as  individually. My future goal is to become a senior 
+        full-stack developer</pre>
         <div class="wrapper2">
-        <a href="https://www.instagram.com/aabhi.17"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://github.com/abhipawar1727"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/abhi-pawar-30008924a/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/aabhi.17"><i class="fa-brands fa-instagram" id="insta"></i></a>
+        <a href="https://github.com/abhipawar1727"><i class="fa-brands fa-github" id="git"></i></a>
+        <a href="https://www.linkedin.com/in/abhi-pawar-30008924a/"><i class="fa-brands fa-linkedin" id="link"></i></a>
+        <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=aspawar1727@gmail.com&hl=en-GB"><i class="fa-sharp fa-regular fa-envelope" id="mail"></i></a>
     </div>
     <a href="https://www.google.com/maps/place/Team+Repair/@17.0510031,74.2729345,17z/data=!3m1!4b1!4m9!1m2!10m1!1e2!3m5!1s0x3bc174d26aaaaab5:0x16223197c7762eb!8m2!3d17.0510031!4d74.2751232!16s%2Fg%2F11hbt4yf_4"><i class="fa-solid fa-location-dot" id="map">&nbsp;&nbsp;</i>URUN-ISLAMPUR</a>
     </div>
     </div>
   </body>
 </html>
+
