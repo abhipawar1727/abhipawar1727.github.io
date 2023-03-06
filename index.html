@@ -37,6 +37,17 @@
 }
 img{
   width: 10rem;
+  margin-left: 1.2rem;
+  border-radius: 50%;
+}
+.name{
+  color: #0b5fbb;
+}
+.fd{
+  color: #f2172a;
+}
+.sk{
+  color: #c42aa7;
 }
 .container {
   display: flex;
@@ -45,7 +56,7 @@ img{
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
+  background-color: rgb(245, 255, 255);
 }
 
  
@@ -122,7 +133,10 @@ img{
        .one{
         width: 100vw;
         font-size:larger;
-        height: 58rem;
+        height: 45rem;
+        background-color: #cdccd1;
+        color: #000000;
+        justify-content: space-evenly;
       
        }
        .two{
@@ -141,8 +155,11 @@ img{
        }
        .wrapper{
         margin: 0 auto;
+        font-size: small;
        }
-     
+     img{
+      margin-left: 0.5rem;
+     }
       }
   </style>
   <body>
@@ -150,19 +167,19 @@ img{
         <div class="one">
             <div class="wrapper">
              <img src="https://t4.ftcdn.net/jpg/02/15/84/43/240_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg" alt="">
-            <h2>ABHISHEK PAWAR</h3>
-            <h5>FRONT-END-DEVELOPER</h5>
+            <h2 class="name">ABHISHEK PAWAR</h3>
+            <h5 class="fd">FRONT-END-DEVELOPER</h5>
             <h5>BSC-IT 2ND YEAR IN KBP COLLEGE ISLAMPUR</h5>
             <h5>aspawar1727@gmail.com</h5>
             <h5>9370657383</h5>
-             <h3>SKILLS</h3>
+             <h3 class="sk">SKILLS</h3>
              <li>C</li>
              <li>C++</li>
              <li>HTML</li>
              <li>CSS</li>
              <li>JAVASCRIPT</li>
              <li>REACTJS</li>
-             <H3>LANGUAGES</H3>
+             <H3 class="sk">LANGUAGES</H3>
              <li class="im" >HINDI</li>
              <li class="im" >MARATHI</li>
              <li class="im" >ENGLISH</li>
@@ -188,4 +205,3 @@ img{
     </div>
   </body>
 </html>
-
